@@ -10,6 +10,7 @@
 @import "./components/about-section";
 @import "./components/mission";
 @import "./components/services-section";
+@import "./components/portfolio-section";
 
 
 // подключения компонентов страницы (маленькие компоненты)
@@ -17,6 +18,8 @@
 @import "./components/header-contacts";
 @import "./components/video-block";
 @import "./components/form-field";
+@import "./components/slider-nav";
+@import "./components/learn-more";
 
 // тестовые стили, удалите их
 .page__body {
