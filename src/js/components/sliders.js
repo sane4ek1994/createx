@@ -4,16 +4,6 @@ import Swiper from '../vendor/swiper.min';
 const bodyStyles = window.getComputedStyle(document.body);
 const gap = parseInt(bodyStyles.getPropertyValue('--grid-gap'));
 
-// const swiper = new Swiper('.swiper', {
-//   slidesPerView: 3,
-//   spaceBetween: gap,
-//   loop: true,
-//   navigation: {
-//     nextEl: '.portfolio-section__next',
-//     prevEl: '.portfolio-section__prev',
-//   },
-// });
-
 const portSlider = document.querySelector('.portfolio-section__items');
 const relatedSlider = document.querySelector('.related-projects__items');
 

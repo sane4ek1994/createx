@@ -1,13 +1,18 @@
 .testimonials {
-  padding: 97px 0;
+  padding-top: 97px;
   background-color: #f4f5f7;
 
   &__container {
-    @include flex-all-sb;
+    display: flex;
+    justify-content: space-between;
   }
 
   &__content {
     max-width: 612px;
+  }
+
+  &__image {
+    margin-bottom: -60px;
   }
 
   &__title {
