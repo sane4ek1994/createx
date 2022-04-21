@@ -4,6 +4,7 @@
   background-color: var(--light-color);
 
   &__title {
+    margin: 0;
     margin-bottom: 60px;
   }
 
@@ -40,7 +41,7 @@
       display: none;
     }
     .recent-article__text {
-      padding: 12px 24px;
+      padding: 20px 24px;
     }
 
     .recent-acticle__title {

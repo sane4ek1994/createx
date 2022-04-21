@@ -22,6 +22,9 @@
 @import "./components/contacts-section";
 @import "./components/footer";
 
+@import "./components/hero-services";
+@import "./components/services-content";
+
 
 // подключения компонентов страницы (маленькие компоненты)
 @import "./components/nav";
@@ -29,8 +32,4 @@
 @import "./components/video-block";
 @import "./components/learn-more";
 @import "./components/social";
-
-// тестовые стили, удалите их
-// .page__body {
-
-// }
+@import "./components/breadcrums";
