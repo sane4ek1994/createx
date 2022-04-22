@@ -4,8 +4,8 @@
   &__list {
     --mission-gap: 94px;
 
-    display: grid;
     margin-bottom: 27px;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--mission-gap) * 2);
   }

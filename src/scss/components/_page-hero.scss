@@ -1,9 +1,9 @@
 .page-hero {
   padding-top: 153px;
-  padding-bottom: 179px;
-  background-image: url('../img/services-hero-bg.png');
-  background-position: right -8px top;
+  padding-bottom: 80px;
+  min-height: 600px;
   background-repeat: no-repeat;
+  background-position: right -8px top;
   background-color: var(--color-athens);
 
 
@@ -29,5 +29,13 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--color-storm);
+  }
+
+  &--services {
+    background-image: url('../img/services-hero-bg.png');
+  }
+
+  &--services-inner {
+    background-image: url('../img/services-inner-hero-bg.png');
   }
 }
