@@ -25,11 +25,7 @@
   border-radius: 4px;
   padding: 48px 40px;
   max-width: 494px;
-  box-shadow:
-    0px 60px 80px -20px rgba(30, 33, 44, 0.16),
-    0px 26px 24px -10px rgba(30, 33, 44, 0.1),
-    0px 12px 10px -6px rgba(30, 33, 44, 0.08),
-    0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  box-shadow: var(--main-shadow);
 
   &__title {
     margin: 0;
