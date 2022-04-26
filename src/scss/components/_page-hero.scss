@@ -59,4 +59,9 @@
     background-position: right -8px top 48px;
     background-color: var(--light-color);
   }
+
+  &--about {
+    background-image: url('../img/about-bg.png');
+    background-color: #f4f5f7;;
+  }
 }
