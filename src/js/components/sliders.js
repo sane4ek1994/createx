@@ -186,7 +186,6 @@ if (historySlider) {
   });
 
   workSlider.on('slideChange', function () {
-    console.log(workSlider.realIndex);
 
     historyBtns.forEach(el => {
       el.classList.remove('history-nav__btn--active');
