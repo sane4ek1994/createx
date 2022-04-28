@@ -1,0 +1,62 @@
+.employee-benefits {
+  padding-bottom: 153px;
+  background-color: var(--light-color);
+
+  &__list {
+    --mission-gap: 94px;
+
+    margin-bottom: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: calc(var(--mission-gap) * 2);
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 71px;
+    text-align: center;
+    background-position: top center;
+    background-size: 48px 48px;
+    background-repeat: no-repeat;
+    &:not(&:last-child) {
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: calc(-1 * var(--mission-gap));
+        width: 1px;
+        height: 100%;
+        background-image: url('../img/divider.svg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--training {
+      background-image:  url('../img/training.svg');
+    }
+    &--growth {
+      background-image:  url('../img/growth.svg');
+    }
+    &--salary {
+      background-image:  url('../img/salary.svg');
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--color-ebony);
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: var(--color-storm);
+  }
+}
