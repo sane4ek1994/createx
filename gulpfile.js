@@ -304,7 +304,7 @@ const htmlMinify = () => {
       collapseWhitespace: true
     }))
     .pipe(dest(buildFolder));
-}
+};
 
 const zipFiles = (done) => {
   del.sync([`${buildFolder}/*.zip`]);
@@ -317,7 +317,7 @@ const zipFiles = (done) => {
     ))
     .pipe(zip(`${rootFolder}.zip`))
     .pipe(dest(buildFolder));
-}
+};
 
 const toProd = (done) => {
   isProd = true;
@@ -326,7 +326,7 @@ const toProd = (done) => {
 
 exports.default = series(clean, htmlInclude, scripts, styles, resources, images, webpImages, avifImages, svgSprites, watchFiles);
 
-exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, avifImages, svgSprites)
+exports.backend = series(clean, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, avifImages, svgSprites);
 
 exports.build = series(toProd, clean, htmlInclude, scripts, styles, resources, images, webpImages, avifImages, svgSprites, htmlMinify);
 
