@@ -132,4 +132,10 @@
       text-transform: initial;
     }
   }
+
+  &--contacts {
+    background-image: url('../img/contacts-hero-bg.png');
+    background-position: right -9px bottom;
+    background-color: var(--color-athens);
+  }
 }
