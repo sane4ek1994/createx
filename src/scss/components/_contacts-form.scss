@@ -1,5 +1,6 @@
 .contacts {
   padding-top: 120px;
+  padding-bottom: 120px;
 
   &__image {
     margin-right: 20px;
@@ -13,14 +14,47 @@
 }
 
 .form-contacts {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  max-width: 600px;
+  width: 600px;
+
+  &__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    width: 100%;
+  }
 
   &__field {
+    margin-bottom: 0;
     width: 47.5%;
+
+    &--big {
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 39px;
+  }
+
+  &__checkbox {
+    max-width: 315px;
+
+    .custom-checkbox__text {
+      font-size: 16px;
+      line-height: 160%;
+
+      &::before {
+        top: 4px;
+      }
+
+      &::after {
+        top: 4px;
+      }
+    }
   }
 
   .form-field__caption {
@@ -35,6 +69,23 @@
     font-size: 16px;
     line-height: 160%;
     color: #9a9ca5;
+  }
+
+  &__fields {
+    border: none;
+    padding: 0;
+    padding-left: 3px;
+    width: 47.5%;
+
+    .form-field__caption {
+      margin-bottom: 21px;
+    }
+  }
+
+  &__radio {
+    &:not(:last-child) {
+      margin-right: 22px;
+    }
   }
 
   .choices {
@@ -94,4 +145,8 @@
   .choices__list--dropdown {
     background-color: var(--color-athens);
   }
+}
+
+.form-contacts .form-field__input--big {
+  height: 126px;
 }
