@@ -5,6 +5,7 @@
   border-radius: 4px;
   box-shadow: var(--main-shadow);
   background: var(--light-color);
+  transition: transform 0.3s ease-in-out;
 
   &__content {
     @include flex-column-center;
@@ -44,5 +45,14 @@
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: var(--color-primary);
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
   }
 }

@@ -78,6 +78,20 @@
     padding: 11px 30px;
     font-size: 14px;
     letter-spacing: 0.5px;
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      color: var(--color-active);
+    }
+
+    &:active {
+      color: var(--color-active);
+    }
   }
 }
 
@@ -106,6 +120,20 @@
       margin-right: 21px;
       padding-right: 44px;
       padding-left: 44px;
+      transition: color 0.3s ease-in-out;
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--color-active);
+      }
+
+      &:active {
+        color: var(--color-active);
+      }
     }
 
     &--send {

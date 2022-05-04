@@ -14,16 +14,23 @@
     border: 1px solid #d7dAdd;
     border-radius: 4px;
     background: var(--color-athens);
+
     &::placeholder {
       color: #9a9ca5;
     }
+
+    &:focus {
+      outline: 1px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
     &--big {
       padding-top: 10px;
       height: 66px;
       resize: none;
-
     }
   }
+
   &--big {
     flex-grow: 1;
 

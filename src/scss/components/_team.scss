@@ -21,6 +21,20 @@
     a {
       border-bottom: 1px solid currentColor;
       color: var(--color-primary);
+      transition: color 0.3s ease-in-out;
+
+      &:focus {
+        outline: 2px solid var(--color-primary);
+        outline-offset: 2px;
+      }
+
+      &:hover {
+        color: var(--color-active);
+      }
+
+      &:active {
+        color: var(--color-active);
+      }
     }
   }
 

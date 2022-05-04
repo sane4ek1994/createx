@@ -23,7 +23,17 @@
       object-fit: cover;
     }
 
+    &:focus {
+      outline: 1px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
     &:hover {
+      color: var(--light-color);
+      background-color: var(--color-primary);
+    }
+
+    &:active {
       color: var(--light-color);
       background-color: var(--color-primary);
     }

@@ -1,15 +1,19 @@
 .social {
   display: flex;
   align-items: center;
+
   &__item {
+
     &:not(:last-child) {
       margin-right: 16px;
     }
   }
+
   &__link {
     display: block;
     width: 24px;
     height: 24px;
+
     svg {
       display: block;
       width: 100%;
@@ -17,6 +21,24 @@
       fill: var(--color-storm);
       opacity: 0.6;
       object-fit: cover;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:focus {
+      outline: 2px solid var(--color-primary);
+      outline-offset: 2px;
+    }
+
+    &:hover {
+      svg {
+        opacity: 1;
+      }
+    }
+
+    &:active {
+      svg {
+        opacity: 1;
+      }
     }
   }
 }

@@ -13,6 +13,7 @@
 
   &__item {
     width: calc((100% - (var(--gap) * 4)) / 5);
+
     &:not(:last-child) {
       margin-right: var(--gap);
     }
@@ -91,6 +92,7 @@
   font-size: 16px;
   line-height: 160%;
   color: var(--color-gray);
+  transition: color 0.3s ease-in-out;
 
   svg {
     margin-right: 16px;
@@ -99,5 +101,35 @@
     color: inherit;
     fill: currentColor;
     object-fit: cover;
+  }
+
+  &:focus {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    svg {
+      fill: var(--color-primary);
+    }
+    color: var(--color-primary);
+  }
+
+  &:active {
+    color: var(--color-active);
+  }
+}
+
+.portfolio-tabs-nav__btn {
+
+  &:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  &:hover {
+  .portfolio-tabs-nav__text {
+      color: var(--color-ebony);
+    }
   }
 }
