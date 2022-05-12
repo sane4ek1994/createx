@@ -6,7 +6,16 @@
 
     &__nav {
       margin-left: -112px;
+
+      @include mini-desktop {
+        margin-left: 0;
+      }
+
+      @include tablet {
+        display: none;
+      }
     }
+
     &--main {
       background-color: var(--light-color);
     }
@@ -23,4 +32,13 @@
     outline: 2px solid var(--color-primary);
     outline-offset: 2px;
   }
+
+  @include mini-desktop {
+    max-width: 100px;
+  }
+
+  @include tablet {
+    max-width: none;
+  }
+
 }

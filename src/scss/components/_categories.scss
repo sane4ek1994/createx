@@ -6,6 +6,10 @@
    margin-bottom: 39px;
  }
 
+ @include mobile {
+   padding: 40px 0;
+ }
+
 }
 
 .categories-nav {
@@ -15,6 +19,14 @@
 
   &__item {
     width: calc(100% / 6);
+
+    @include tablet {
+      width: calc(100% / 3);
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__btn {
@@ -48,6 +60,10 @@
       border-color: currentColor;
       color: var(--color-primary);
     }
+  }
+
+  @include tablet {
+    flex-wrap: wrap;
   }
 }
 

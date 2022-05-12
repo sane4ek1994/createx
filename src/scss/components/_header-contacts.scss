@@ -1,11 +1,16 @@
 .header-contacts {
   @include flex-v-center;
+
   &__link {
     @include flex-column-start;
 
     &:not(&:last-child) {
       margin-right: 35px;
     }
+  }
+
+  @include tablet {
+    display: none;
   }
 }
 
@@ -27,6 +32,10 @@
     line-height: 150%;
     color: var(--color-ebony);
     transition: color 0.3s ease-in-out;
+
+    @include mini-desktop {
+      font-size: 16px;
+    }
   }
 
   &:focus {

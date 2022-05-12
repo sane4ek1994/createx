@@ -25,10 +25,32 @@
     margin: 0 auto;
     max-width: 736px;
     gap: 48px;
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  &__item {
+    @include small-tablet {
+      @include flex-all-center;
+    }
   }
 
   &__title {
     margin-bottom: 62px;
+
+    @include mobile {
+      margin-bottom: 25px;
+    }
+  }
+
+  @include mobile {
+    padding: 40px 0;
   }
 }
 

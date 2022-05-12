@@ -23,6 +23,10 @@
     font-size: 20px;
     line-height: 150%;
     color: var(--color-ebony);
+
+    @include mini-desktop {
+      font-size: 18px;
+    }
   }
 
   &__descr {
@@ -47,6 +51,10 @@
     color: var(--color-primary);
     transition: all 0.3s ease-in-out;
     will-change: margin;
+
+    @include small-tablet {
+      margin-bottom: 0;
+    }
   }
 
   &:focus {

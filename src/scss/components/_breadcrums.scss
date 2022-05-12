@@ -43,5 +43,13 @@
     &:active {
       color: var(--color-active);
     }
+
+    @include mobile {
+      font-size: 13px;
+    }
+  }
+
+  @include small-tablet {
+    flex-wrap: wrap;
   }
 }

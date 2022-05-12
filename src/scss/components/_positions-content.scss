@@ -37,6 +37,12 @@
     color: var(--color-storm);
   }
 
+  &__left {
+    @include tablet {
+      margin-bottom: 20px;
+    }
+  }
+
   &__city {
     position: relative;
     margin-right: 21px;
@@ -93,6 +99,11 @@
       color: var(--color-active);
     }
   }
+
+  @include tablet {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .positions-looking {
@@ -113,6 +124,18 @@
     font-size: 18px;
     line-height: 150%;
     color: var(--color-gray);
+  }
+
+  &__btns {
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+
+      .positions-looking__btn--subs {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
   }
 
   &__btn {

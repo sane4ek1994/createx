@@ -7,3 +7,4 @@ import './components/selects';
 import './components/video';
 import './components/to-top';
 import './components/modals';
+import './components/burger';

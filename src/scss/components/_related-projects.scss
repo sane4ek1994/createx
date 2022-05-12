@@ -8,6 +8,11 @@
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 48px;
+
+    @include mobile {
+      display: block;
+      margin-bottom: 25px;
+    }
   }
 
   &__learn {
@@ -22,6 +27,10 @@
 
   &__slider-nav {
     transform: translateX(12px);
+
+    @include mobile {
+      transform: none;
+    }
   }
 
   &__items {
@@ -37,6 +46,12 @@
     .slider-visible {
       opacity: 1;
       visibility: visible;
+    }
+
+    .portfolio-item__title {
+      @include small-tablet {
+        min-height: 52px;
+      }
     }
   }
 }

@@ -35,6 +35,10 @@
       .services__info {
         padding-left: 0px;
         order: -1;
+
+        @include mobile {
+          order: initial;
+        }
       }
       .services__image {
         display: flex;

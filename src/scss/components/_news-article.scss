@@ -6,14 +6,14 @@
   background: var(--light-color);
 
   &--small {
-    .recent-article__descr {
+    .news-article__descr {
       display: none;
     }
-    .recent-article__text {
+    .news-article__text {
       padding: 20px 24px;
     }
 
-    .recent-acticle__title {
+    .news-acticle__title {
       margin-bottom: 9px;
     }
   }
@@ -26,6 +26,14 @@
     margin: 0;
     margin-bottom: 13px;
   }
+
+  &__image {
+    @include tablet {
+      width: 100%;
+      object-fit: cover;
+     }
+  }
+
   &__link {
     font-weight: 700;
     font-size: 20px;

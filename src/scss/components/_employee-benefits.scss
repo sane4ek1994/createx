@@ -9,6 +9,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--mission-gap) * 2);
+
+    @include tablet {
+      --mission-gap: 30px;
+    }
+
+    @include small-tablet {
+      --mission-gap: 10px;
+    }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__item {
@@ -42,6 +54,12 @@
     &--salary {
       background-image:  url('../img/salary.svg');
     }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &__subtitle {
@@ -58,5 +76,9 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--color-storm);
+  }
+
+  @include mobile {
+    padding-bottom: 40px;
   }
 }

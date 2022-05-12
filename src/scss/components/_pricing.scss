@@ -23,6 +23,10 @@
   border-radius: 4px;
   box-shadow: var(--main-shadow);
   background-color: var(--light-color);
+
+  @include small-tablet {
+    overflow-x: auto;
+  }
 }
 
 .table {
@@ -106,6 +110,10 @@
       &:active {
         color: var(--color-active);
       }
+
+      @include tablet {
+        padding: 0 10px;
+      }
     }
 
     &:first-child {
@@ -133,5 +141,9 @@
     font-size: 16px;
     line-height: 160%;
     color: var(--color-gray);
+  }
+
+  @include small-tablet {
+    width: 1200px;
   }
 }

@@ -5,16 +5,30 @@
 
   &__left {
     grid-column: 7 span;
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__top {
     @include flex-v-center;
 
     margin-bottom: 22px;
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__logo {
     margin-right: 60px;
+
+    @include mobile {
+      display: inline-block;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__descr {
@@ -27,6 +41,14 @@
 
   &__form {
     grid-column: 5 span;
+
+    @include small-tablet {
+      grid-column: 12 span;
+    }
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__address {
@@ -35,6 +57,10 @@
 
   &__nav {
     grid-column: 8 span;
+
+    @include mobile {
+      grid-column: 4 span;
+    }
   }
 
   &__copyright {
@@ -50,6 +76,10 @@
       background-size: 16px 16px;
       background-repeat: no-repeat;
 
+    }
+
+    @include mobile {
+      grid-column: 4 span;
     }
   }
 }
@@ -152,6 +182,14 @@
   &__col {
     &:not(:last-child) {
       margin-right: 125px;
+
+      @include small-tablet {
+        margin-right: 65px;
+      }
+
+      @include mobile {
+        margin-right: 35px;
+      }
     }
   }
 
@@ -180,5 +218,13 @@
     &:active {
       color: var(--light-color);
     }
+  }
+
+  @include small-tablet {
+    padding-left: 24px;
+  }
+
+  @include mobile {
+    padding: 0;
   }
 }

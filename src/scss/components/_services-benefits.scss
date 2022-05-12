@@ -19,6 +19,10 @@
   &__btn {
     width: 390px;
     transform: translateY(13px);
+
+    @include mobile {
+      width: 280px;
+    }
   }
 
   &__list {
@@ -28,6 +32,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: calc(var(--mission-gap) * 2);
+
+    @include tablet {
+      --mission-gap: 30px;
+    }
+
+    @include small-tablet {
+      --mission-gap: 10px;
+    }
+
+    @include mobile {
+      display: block;
+    }
   }
 
   &__item {
@@ -49,6 +65,10 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+
+        @include small-tablet {
+          display: none;
+        }
       }
     }
 
@@ -60,6 +80,12 @@
     }
     &--control {
       background-image:  url('../img/control.svg');
+    }
+
+    @include mobile {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
   }
 
