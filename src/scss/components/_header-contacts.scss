@@ -7,10 +7,24 @@
     &:not(&:last-child) {
       margin-right: 35px;
     }
+
+    @include tablet {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
   }
 
   @include tablet {
     display: none;
+  }
+
+  &--nav {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
   }
 }
 

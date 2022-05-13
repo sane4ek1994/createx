@@ -563,13 +563,23 @@ a {
   }
 }
 
+.dis-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 .burger {
   --burger-width: 40px;
   --burger-height: 20px;
-  --burger-line-height: 2px;
+  --burger-line-height: 4px;
 
   position: absolute;
-  right: 15px;
+  right: 18px;
   top: 23px;
   z-index: 1000;
   display: none;
@@ -577,7 +587,7 @@ a {
   padding: 0;
   width: var(--burger-width);
   height: var(--burger-height);
-  color: #000;
+  color: var(--color-primary);
   background-color: transparent;
   cursor: pointer;
 
@@ -591,6 +601,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
+  border-radius: 4px;
   width: 100%;
   height: var(--burger-line-height);
   background-color: currentColor;
@@ -610,6 +621,7 @@ a {
   left: 0;
   top: 50%;
   width: 100%;
+  border-radius: 4px;
   height: var(--burger-line-height);
   background-color: currentColor;
   transform: translateY(-50%);
@@ -635,4 +647,38 @@ a {
 
 .burger:focus::after {
   opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 500;
+  background-color: rgba(#000, 0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.modal {
+  @include mobile {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.site-modal {
+  @include mobile {
+    padding: 20px;
+    padding-top: 40px;
+    width: 90%;
+  }
 }
